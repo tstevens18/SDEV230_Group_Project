@@ -2,6 +2,9 @@
 #define USERTYPEH_CPP
 
 #include <string>
+#include <map>
+#include <vector>
+
 using namespace std;
 class userType
 {
@@ -68,9 +71,28 @@ class studentType : public userType
     // Print all courses
     void printAllCourses();
 };
-
-class infoMap
+// These types will be stored in a map, then saved and reloaded when the program starts.
+struct courseInfo
 {
-private:
+    string courseName;
+    string courseID;
+    // Store Instructor Name
+    string courseInstructor;
+    // Vector storing student IDs
+    vector<string> students;
+};
+struct studentInfo
+{
+    string studentID;
+    string studentFName;
+    string studentLName;
+    map<string, char> courseGrades;
+};
+struct instructorInfo
+{
+    string instructorID;
+    string instructorFName;
+    string instructorLName;
+    vector<string> courses;
 };
 #endif
