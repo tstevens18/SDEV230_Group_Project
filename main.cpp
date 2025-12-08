@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "App.h"
 
 /*
@@ -11,3 +12,11 @@ int main() {
     app.run();  // start the menu loop
     return 0;
 }
+=======
+#include <iostream>
+
+int main()
+{
+    return 0;
+}
+>>>>>>> e7bdf0195300a083b89296e39aff723a4897f3bd
